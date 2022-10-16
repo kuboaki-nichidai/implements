@@ -5,9 +5,9 @@ SRCLANG := c
 APPL_ASMOBJS :=
 ifdef USE_CXX
 	APPL_CXXOBJS +=
-	APPL_COBJS += util.o
+	APPL_COBJS += util.o auto_ride.o unit_a.o
 else
-	APPL_COBJS += util.o
+	APPL_COBJS += util.o auto_ride.o unit_a.o
 endif
 
 APPL_DIRS += $(mkfile_path)app $(mkfile_path)/../util
